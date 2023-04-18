@@ -95,7 +95,7 @@ def MakeTheProject(user):
     if response["featured_project_data"] is None:
         data.append("")
     else:
-        saveThumbnail(f"https://uploads.scratch.mit.edu/projects/thumbnails/{data[7]}.png")
+        saveThumbnail(f"https://uploads.scratch.mit.edu/projects/thumbnails/{data[6]}.png")
         data.append(readThumbnail())
     for i in [2, 3, 5, 7]:
         data[i] = data[i].replace("\n", " ")
