@@ -1,11 +1,11 @@
-# -- Make sure to have all these dependencies installed -- #
+# --- Make sure to have all these dependencies installed --- #
 from PIL import Image
 import requests, math
 import urllib.request
 import json, shutil
 import os.path
 
-USERNAME = "codeGIO"  # Change with your username and run the script
+USERNAME = "codeGIO"  # Change it to your username and then run the script
 
 with open("Assets/IMG.chars.txt", 'r') as f:
     IMGchars = f.read().rsplit()
@@ -26,7 +26,7 @@ def readThumbnail():
             data.append(list(col))
     for i in range(len(data)):
         for j in range(3):
-            data[i][j] = math.floor(data[i][j] / 4)
+            data[i][j] = math.floor(data[i][j]/4)
     temp = ""
     for i in data:
         for j in i:
@@ -44,7 +44,7 @@ def readPFP():
             data.append(list(col))
     for i in range(len(data)):
         for j in range(3):
-            data[i][j] = math.floor(data[i][j] / 4)
+            data[i][j] = math.floor(data[i][j]/4)
     temp = ""
     for i in data:
         for j in i:
@@ -101,7 +101,7 @@ def MakeTheProject(user):
         data[i] = data[i].replace("\n", " ")
     with open("Assets/project.json", 'r', encoding="utf8") as f:
         project = json.load(f)
-    project["targets"][0]["lists"]["9~zqgLe.//|w7zCkztM2"][1] = [u.username, str(u.id), data[2], data[3], data[4], data[5], data[6], u.country]
+    project["targets"][0]["lists"]["9~zqgLe.//|w7zCkztM2"][1] = [data[0], data[1], data[2], data[3], data[4], data[5], data[6], data[7]]
     project["targets"][0]["lists"][",9oQjL:4s(eK*^C5kii?"][1] = list(data[9])
     project["targets"][0]["lists"]["4lt40q3MZ|Ie{G$420_A"][1] = data[8]
     with open("ToExport/project.json", "w") as f:
