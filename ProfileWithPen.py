@@ -7,9 +7,6 @@ import os.path
 
 USERNAME = "codeGIO"  # Change with your username and run the script
 
-
-
-
 with open("Assets/IMG.chars.txt", 'r') as f:
     IMGchars = f.read().rsplit()
 
