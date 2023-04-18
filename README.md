@@ -5,6 +5,6 @@ Steps:
 - Install all the dependencies (python3, libraries like: PILLOW, requests, math, urllib, json, shutil, os).
 - Edit the "USERNAME" variable in main.py to be your scratch username.
 - Run main.py and wait for the result! There should appear a new .sb3 file which can be loaded to scratch!
-- If you decide to share your newly created scratch project, please credit to codeGIO!
+- If you decide to share your newly created scratch project, please credit codeGIO!
 
 Ask questions on my profile on scratch: https://scratch.mit.edu/users/codeGIO/
